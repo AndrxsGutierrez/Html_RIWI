@@ -1,0 +1,31 @@
+body {
+    background-color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+
+}
+.card {
+    background-color: rgb(114, 76, 114);
+    padding: 0;
+    text-align: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 51px;
+}
+
+h2 {
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+p {
+    background-color: black;
+    padding: 25px;
+    font-style: italic;
+    text-align: justify;
+}

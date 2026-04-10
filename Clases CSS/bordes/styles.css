@@ -1,0 +1,18 @@
+div {
+    margin: 40px auto;
+    background-color: green;
+    width: 200px;
+    
+    text-align: center;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    
+
+    border-radius: 0 25px 25px 25px;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
