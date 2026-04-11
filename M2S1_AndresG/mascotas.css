@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    padding: 5px 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 30px
+    
+    
+}
+.lista{
+    text-decoration: none;
+    
+}
+
+.cartas {
+    
+    padding: 20px;
+    margin: 40px;
+}
+
+.cv {
+    display: flex;
+    justify-content: space-around;
+}
