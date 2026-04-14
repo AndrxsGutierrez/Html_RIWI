@@ -16,7 +16,6 @@ nav {
     padding: 1.5rem 3rem;
     max-width: 1200px;
     margin: 0 auto;
-    
 }
 
 .nav_links {
@@ -43,7 +42,6 @@ h1 {
     padding: 1.5rem 3rem;
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 #proyectos ul li{
@@ -52,7 +50,6 @@ h1 {
     font-weight: 600;
     font-size: 1.2rem;
     color: rgb(98, 90, 90);
-
 }
 
 p {
@@ -66,4 +63,3 @@ p {
     color: #a05fdc;
     font-weight: 600;
 }
-
