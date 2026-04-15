@@ -1,37 +1,95 @@
+* {
+    font-family: sans-serif, Arial, Helvetica;
+}
 header {
-    width: 100%;
+    width: auto;
     height: 70px;
-    padding: 10px;
-    border: 1px black;
-    border-radius: 9px;
+    box-sizing: border-box;
+    color: rgb(124, 112, 112);
     display: flex;
-    align-items: center;
+    margin: 0;
+    justify-content: space-evenly;
+    gap: 80PX;
+    border-bottom: 2px solid black;
 }
-body {
-    background-color: rgb(151, 138, 138);
-}
-h1 {
-    padding: 35px;
-    font-size: 26px;
-}
-nav {
-    margin-left: 300px;
-    text-decoration: none;
-    
-    
 
-}
-#menu{
-    margin-left: 10%;
+#menu {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap:20px;
+    padding: 20px;
+    text-decoration: none;
+}
+#menu a {
+    text-decoration: none;
+    color: rgb(124, 112, 112);
+}
+#menu a:hover {
+    color:  #a05fdc;
+}
+body {
     margin: 0;
     padding: 0;
-    
+    background-color: #f9f9f9;
+    color: #bcd8ec;
+}
+#sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 10% 20%;
+    color: rgb(124, 112, 112);
 }
 
-#sobre {
-    padding: 140px 20%;
-    align-items: center;
+#sobre span a {
+    text-decoration: none;
+    color: rgb(129, 91, 224);
+}
+#sobre h2 {
+    margin: 0;
+}
+
+#contacto {
+    margin: 0;
+    box-sizing: border-box;
+    padding: .5rem 2rem 4rem 2rem;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 1.4rem;
+    color: rgb(0,0,0);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    padding: 0.5rem;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+form button {
+    background-color: #a05fdc;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+form button:hover {
+    background-color: #8a4dbb;
 }
