@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedor{
+    border: 3px solid black;
+    height: 600px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(214, 161, 61);
+}
+aside, #cont1, .cont2and3 {
+    display: flex;
+}
+
+aside {
+    display: flex;
+    width: 30%;
+    height: 600px;
+    background-color: aquamarine;
+}
+#cont1, #cont2and3 {
+    background-color: brown;
+}
+
+.cont2and3 {
+    background-color: blueviolet;
+}
