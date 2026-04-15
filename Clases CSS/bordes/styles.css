@@ -3,7 +3,7 @@ div {
     background-color: green;
     width: 200px;
     
-    text-align: center;
+    text-align: center; 
     border-width: 5px;
     border-color: black;
     border-style: solid;
