@@ -93,6 +93,7 @@ body {
 	cursor: pointer;
 }
 
+
 @media screen and (max-width: 950px) {
 	.contenedor {
 	display: grid;
@@ -102,7 +103,6 @@ body {
 	.contenedor-conciertos {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-gap: 20px;
 }
 }
 
@@ -134,3 +134,4 @@ body {
 	
 }
 }
+

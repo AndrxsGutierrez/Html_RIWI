@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid_content {
+    width: 400px;
+    height: 700px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:end;
+    background: #1b1a1a;
+    border-radius: 10px;
+    background-image: url(otoño.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2px 2px 35px 0 rgba(0, 0, 0, 0.5);
+
+
+}
+
+.grid_content img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.grid_content img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+    opacity: 0.5;
+}
+
+.card_content {
+    position: relative;
+    background-color: aqua;
+    padding: 25px 25px;
+    width: 100%;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.card_content:hover {
+    transform: translateY(25px)
+}
+.grid_content:hover {
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
