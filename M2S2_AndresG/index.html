@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio Andres Gutierrez</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="icon" href="./img/logo-removebg-preview-modified.png" type="img/logo.png">
-    </head>
-        <body> 
-            <main>
-                <header>
-                    <div class="descripcion">
-                        <h2>Andres Gutierrez O.</h2>
-                        <h1>Software Developer</h1>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>Home</li>
-                            <li>Proyectos</li>
-                            <li><a href="mascotas.html">Mascotas</a></li>
-                            <li>Contactame</li>
-                        </ul>
-                    </nav>
-                </header>
-                <section class="sobre_mi">
-                    <h2>Hola, soy Andres Gutierrez</h2>
-                    <div>
-                        <p>
-                            Actualmente me estoy formando como <strong>Desarrollador de Software en <span><a href="https://riwi.io/">RIWI</a></span></strong>, 
-                            combinando mi experiencia previa como Técnico en Mantenimiento de Equipos de Cómputo y Redes 
-                            con nuevas habilidades en programación y lógica algorítmica.
-                        </p>
-                        <p>
-                            Tengo conocimientos en <strong>JavaScript, HTML5, CSS3 y Python</strong>, 
-                            los cuales he aplicado en proyectos como sistemas CRUD de inventario y gestión de estudiantes, 
-                            calculadoras científicas y desarrollo de interfaces web funcionales e intuitivas.
-                        </p>
-                        <p>
-                            Mi objetivo es seguir creciendo profesionalmente, crear soluciones eficientes y escalables, 
-                            y mantenerme en aprendizaje continuo dentro del sector tecnológico.
-                        </p>
-                        <button>Contactame</button>
-                    </div>
-                </section>
-                <section class="tecnologias">
-                    <h2>Tecnologias usadas</h2>
-                    <div class="contenedor">
-                        <article class="tarjetas">
-                            <img src="./img/python.png"         alt="Logo de Python">
-                        </article>
-                        <article class="tarjetas">
-                            <img src="./img/html.png" alt="Logo de HTML5">
-                        </article>
-                        <article class="tarjetas">
-                            <img src="./img/css.png" alt="Logo de CSS3"> 
-                    </div>
-                </section>
-                <section class="Contactame">
-                    <h2>Contactame</h2>
-                    <input type="text" placeholder="Nombre">
-                    <input type="email" placeholder="email@portafolio.com">
-                    <textarea placeholder="Mensaje" required></textarea>
-                    <button  type="submit">Enviar</button>
 
-                </section>
-                <img src="./img/logo.png" alt="">
-            </main>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Andres Gutierrez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo-removebg-preview-modified.png" type="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <div class="descripcion">
+            <h2>Andres Gutierrez O.</h2>
+            <h1>Software Developer</h1>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="mascotas.html">Mascotas</a></li>
+                <li><a href="#Contactame">Contactame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="sobre_mi">
+            <h2>Hola, soy Andres Gutierrez</h2>
+            <div>
+                <p>
+                    Actualmente me estoy formando como <strong>Desarrollador de Software en <span><a
+                                href="https://riwi.io/">RIWI</a></span></strong>,
+                    combinando mi experiencia previa como Técnico en Mantenimiento de Equipos de Cómputo y Redes
+                    con nuevas habilidades en programación y lógica algorítmica.
+                </p>
+                <p>
+                    Tengo conocimientos en <strong>JavaScript, HTML5, CSS3 y Python</strong>,
+                    los cuales he aplicado en proyectos como sistemas CRUD de inventario y gestión de estudiantes,
+                    calculadoras científicas y desarrollo de interfaces web funcionales e intuitivas.
+                </p>
+                <p>
+                    Mi objetivo es seguir creciendo profesionalmente, crear soluciones eficientes y escalables,
+                    y mantenerme en aprendizaje continuo dentro del sector tecnológico.
+                </p>
+                <button class="btn_contactame">Contactame</button>
+            </div>
+        </section>
+        <section class="tecnologias">
+            <h2>Tecnologias usadas</h2>
+            <div class="contenedor">
+                <article class="tarjetas">
+                    <img src="./img/python.png" alt="Logo de Python">
+                </article>
+                <article class="tarjetas">
+                    <img src="./img/html.png" alt="Logo de HTML5">
+                </article>
+                <article class="tarjetas">
+                    <img src="./img/css.png" alt="Logo de CSS3">
+            </div>
+        </section>
+        <section class="proyectos" id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="caja">
+                <p class="p1">proyecto 1</p>
+                <p class="p2">proyecto 2</p>
+                <p class="p3">proyecto 3</p>
+                <p class="p4">proyecto 4</p>
+            </div>
+        </section>
+        <section class="Contactame" id="Contactame">
+            <h2>Contactame</h2>
+            <input type="text" placeholder="Nombre">
+            <input type="email" placeholder="email@portafolio.com">
+            <textarea placeholder="Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </section>
+    </main>
+</body>
+
 </html>
