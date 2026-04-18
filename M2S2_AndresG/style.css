@@ -8,7 +8,15 @@
 /*Diseñado el header nav (diseño final)*/
 body {
     min-height: 100vh;
-   
+    background-image: 
+        linear-gradient(to bottom,
+    rgba(0,0,0,9),
+    rgba(0, 0, 0, 0.2), /*Para que resalte el menu y el nombre*/
+    transparent),
+    url("./img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
     
 }
 
@@ -195,14 +203,5 @@ button:hover {
 }
 
 main {
-     background-image: 
-        linear-gradient(to bottom,
-    rgba(0,0,0,9),
-    rgba(0, 0, 0, 0.2), /*Para que resalte el menu y el nombre*/
-    transparent),
-    url("./img/fondo.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-
-    }
+    
+}
