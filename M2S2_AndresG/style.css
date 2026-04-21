@@ -17,6 +17,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    background-attachment: fixed;
     
 }
 
@@ -91,7 +92,7 @@ button:hover {
     color: white;
     background-color: black;
     border: 3px solid white;
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
 
 }
 
@@ -191,8 +192,21 @@ button:hover {
     border-radius: 6px
 }
 
+/*Haciendo el contactame*/
+.Contactame {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 50rem;
+    width: 90%;
+}
 
-
+.Contactame h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 1rem;
+    text-shadow: 0 0 50px rgb(21, 11, 11);
+}
 /*Responsive*/
 @media screen and (max-width: 800px) {
     header {
@@ -200,8 +214,4 @@ button:hover {
         gap: 1rem;
         text-align: center;
     }
-}
-
-main {
-    
 }
