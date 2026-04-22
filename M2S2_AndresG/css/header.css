@@ -1,0 +1,45 @@
+/*Diseñado el header nav (diseño final)*/
+body {
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(to bottom,
+    rgba(0,0,0,9),
+    rgba(0, 0, 0, 0.2), /*Para que resalte el menu y el nombre*/
+    transparent),
+    url("./../img/fondo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    
+}
+
+header {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+    max-width: 63rem;
+    margin: 2.1rem auto;
+}
+
+.descripcion {
+    line-height: 1.7rem;
+}
+
+.descripcion, header nav ul {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9);
+} 
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    font-weight: 900;
+    font-size: 1.02rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+}

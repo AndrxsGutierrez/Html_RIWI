@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* centra verticalmente */
+    background-color: rgba(0, 0, 0, 0.253);
+    max-width: 30rem;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0.5rem 1rem; /* mejor que height fijo */
+    border-radius: 10px;
+    gap: 1rem; /* espacio entre texto e icono */
+}
+
+.footer__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.link {
+    text-decoration: none;
+}

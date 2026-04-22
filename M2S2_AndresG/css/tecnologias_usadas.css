@@ -1,0 +1,37 @@
+/*Tecnologias usadas*/
+.tecnologias {
+    max-width: 50rem;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.tecnologias h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 5px;
+    margin: 0 0 2rem;
+    text-shadow: 0 0 50px rgb(21, 11, 11);
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.tarjetas {
+    position: relative;
+    width: 250px;
+    height: 320px;
+}
+.tarjetas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
