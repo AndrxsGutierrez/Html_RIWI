@@ -43,7 +43,7 @@
                     Mi objetivo es seguir creciendo profesionalmente, crear soluciones eficientes y escalables,
                     y mantenerme en aprendizaje continuo dentro del sector tecnológico.
                 </p>
-                <button class="btn_contactame">Contactame</button>
+                <a href="#Contactame" class="btn_contactame">Contactame</a>
             </div>
         </section>
         <section class="tecnologias">
@@ -70,10 +70,12 @@
         </section>
         <section class="Contactame" id="Contactame">
             <h2>Contactame</h2>
-            <input type="text" placeholder="Nombre">
-            <input type="email" placeholder="email@portafolio.com">
-            <textarea placeholder="Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
+            <form>
+                <input class="inputs" type="text" name="nombre" placeholder="Nombre" required>
+                <input class="inputs" type="email" name="email" placeholder="email@portafolio.com" required>
+                <textarea rows="12" class="inputs" name="mensaje" placeholder="Mensaje" required></textarea>
+                <button class="boton" type="submit">Enviar</button>
+            </form>
         </section>
     </main>
 </body>
