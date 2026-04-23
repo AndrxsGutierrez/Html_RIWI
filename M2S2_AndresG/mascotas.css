@@ -5,60 +5,44 @@
     font-family: sans-serif, Arial, Helvetica;
 }
 
+body {
+    display: grid;
+    grid-template: 70px 1fr 70px / 1fr;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
-    padding: 2rem;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
+    justify-content: space-between;
+    padding: 1rem;
+    max-width: 90rem;
+    width: 90%;
+    margin: 8px auto;
 }
 
-.menu {
+header ul {
     display: flex;
+    gap: 1rem;
     list-style: none;
-    gap: 2rem
 }
 
-.lista {
+header ul li a {
     text-decoration: none;
-    font-weight: 600;
+    color: black;
 }
-
-.lista:hover {
-    color: #a05fdc;
-}
-
 
 .cv {
-    display: flex;
-    max-width: 1200PX;
-    margin: 0 auto;
-    justify-content: space-around;
-    padding: 4rem 2rem;
-
-}
-
-.carta {
-    box-shadow: 0 2px 5px;
-    padding: 1rem;
-    display: flex;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+    margin: 2rem auto;
+    max-width: 90rem;
+    width: 90%;
     align-items: center;
-}
-
-.cartas h2 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-
-.cartas {
-    background: white;
-    border-radius: 10px;
-    overflow: hidden;
+    justify-content: center;
+    gap: 1rem;
 }
 
 .cartas img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 300px;
+    width: 350px;
 }
