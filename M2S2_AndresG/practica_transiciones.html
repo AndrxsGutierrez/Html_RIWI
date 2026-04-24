@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica de Transiciones</title>
+        <link rel="stylesheet" href="./css/practica_transiciones.css">
+    </head>
+    <body>
+        <main class="contenedor">
+            <section class="tarjeta-explicacion" aria-labelledby="titulo-practica">
+                <h1 id="titulo-practica">Practica de transiciones y animaciones</h1>
+                <p>
+                    Este ejemplo usa un enlace con una linea animada parecida a la que hicimos en
+                    <strong>Inicio</strong>. La idea es que puedas practicar sin dañar tus archivos principales.
+                </p>
+
+                <nav aria-label="Menu de practica">
+                    <ul class="menu-practica">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Proyectos</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+
+                <section class="teoria" aria-labelledby="titulo-teoria">
+                    <h2 id="titulo-teoria">Que debes observar</h2>
+                    <p>
+                        Pasa el mouse por cada enlace. Fijate en que el texto cambia de color y la linea
+                        de abajo aparece desde el centro hacia los lados.
+                    </p>
+                    <p>
+                        Ese efecto se logra combinando <strong>transition</strong>,
+                        <strong>transform</strong> y un pseudo-elemento <strong>::after</strong>.
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #f4f7fb, #d7e5f0);
+    color: #1f2a37;
+}
+
+.contenedor {
+    width: min(90%, 52rem);
+}
+
+.tarjeta-explicacion {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 18px 45px rgba(31, 42, 55, 0.12);
+}
+
+.tarjeta-explicacion h1 {
+    margin-bottom: 1rem;
+}
+
+.tarjeta-explicacion p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.menu-practica {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 1.5rem 0 2rem;
+}
+
+.menu-practica a {
+    /* position: relative hace que el pseudo-elemento se acomode
+       tomando este enlace como referencia. */
+    position: relative;
+
+    /* inline-block permite aplicar ancho, padding y pseudo-elementos
+       con mayor control que un inline normal. */
+    display: inline-block;
+
+    color: #243447;
+    text-decoration: none;
+    padding-bottom: 0.45rem;
+    font-weight: 700;
+
+    /* transition no crea una animacion sola.
+       Solo le dice al navegador como debe suavizar un cambio
+       cuando una propiedad pase de un valor a otro. */
+    transition: color 0.25s ease;
+}
+
+.menu-practica a::after {
+    /* content es obligatorio para que ::after exista. */
+    content: "";
+
+    /* absolute permite colocar la linea exactamente debajo del texto. */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    /* width: 100% hace que la linea tenga el mismo ancho del enlace. */
+    width: 100%;
+    height: 3px;
+    background-color: #ff7a18;
+    border-radius: 999px;
+
+    /* transform modifica visualmente el elemento.
+       scaleX(0) lo comprime en el eje horizontal hasta dejarlo invisible. */
+    transform: scaleX(0);
+
+    /* transform-origin define desde que punto se transforma.
+       center hace que la linea nazca del medio. */
+    transform-origin: center;
+
+    /* Aqui la transicion se aplica al transform para que
+       scaleX(0) pase suavemente a scaleX(1). */
+    transition: transform 0.3s ease;
+}
+
+.menu-practica a:hover,
+.menu-practica a:focus-visible {
+    color: #ff7a18;
+}
+
+.menu-practica a:hover::after,
+.menu-practica a:focus-visible::after {
+    /* scaleX(1) devuelve a la linea su ancho completo. */
+    transform: scaleX(1);
+}
+
+.teoria {
+    border-top: 1px solid #dbe5ef;
+    padding-top: 1.5rem;
+}
+
+.teoria h2 {
+    margin-bottom: 0.75rem;
+}
+
+@media screen and (max-width: 640px) {
+    .menu-practica {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
