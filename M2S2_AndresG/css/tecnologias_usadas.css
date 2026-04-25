@@ -45,22 +45,11 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.35s ease, filter 0.35s ease;
+    transition: transform 0.8s ease, filter 0.7s ease;
 }
 
 .tarjeta_tecnologia:hover img {
     transform: scale(1.08);
-    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.25));
+    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.24));
 }
 
-@keyframes aparecerTarjeta {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}

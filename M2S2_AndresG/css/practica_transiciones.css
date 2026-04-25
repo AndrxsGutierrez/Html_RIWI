@@ -57,7 +57,7 @@ body {
     font-weight: 700;
 
     /* transition no crea una animacion sola.
-       Solo le dice al navegador como debe suavizar un cambio
+    Solo le dice al navegador como debe suavizar un cambio
        cuando una propiedad pase de un valor a otro. */
     transition: color 0.25s ease;
 }

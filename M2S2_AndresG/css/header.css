@@ -55,14 +55,14 @@ header nav ul li a::after {
     bottom: 0;
     width: 100%;
     height: 3px;
-    background-color: rgb(71, 95, 161);
+    background-color: var(--color_primario);
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease;
 }
 
 header nav ul li a:hover {
-    color: rgb(71, 95, 161);
+    color: var(--color_primario);
 }
 
 header nav ul li a:hover::after {
