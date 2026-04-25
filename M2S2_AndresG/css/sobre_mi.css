@@ -25,7 +25,7 @@
     gap: 9px;
 }
 
-.btn_contactame {
+.boton_contactame {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@
     background: rgba(246, 246, 246, 0.963);
 }
 
-.btn_contactame:hover {
+.boton_contactame:hover {
     color: white;
     background-color: rgba(0, 0, 0, 0.800);
     border: 3px solid white;

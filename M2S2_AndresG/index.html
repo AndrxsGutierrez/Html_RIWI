@@ -10,16 +10,16 @@
 </head>
     <body>
         <header>
-            <div class="descripcion">
+            <div class="descripcion_personal">
                 <h2>Andres Gutierrez O.</h2>
                 <h1>Software Developer</h1>
             </div>
             <nav>
                 <ul>
-                    <li>Home</li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="#proyectos">Proyectos</a></li>
                     <li><a href="mascotas.html">Mascotas</a></li>
-                    <li><a href="#Contactame">Contactame</a></li>
+                    <li><a href="#seccion_contactame">Contactame</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,46 +42,86 @@
                         Mi objetivo es seguir creciendo profesionalmente, crear soluciones eficientes y escalables,
                         y mantenerme en aprendizaje continuo dentro del sector tecnológico.
                     </p>
-                    <a href="#Contactame" class="btn_contactame">Contactame</a>
+                    <a href="#seccion_contactame" class="boton_contactame">Contactame</a>
                 </div>
             </section>
             <section class="tecnologias">
                 <h2>Tecnologias usadas</h2>
-                <div class="contenedor">
-                    <article class="tarjetas">
+                <div class="contenedor_tecnologias">
+                    <article class="tarjeta_tecnologia">
                         <img src="./img/python.png" alt="Logo de Python">
                     </article>
-                    <article class="tarjetas">
+                    <article class="tarjeta_tecnologia">
                         <img src="./img/html.png" alt="Logo de HTML5">
                     </article>
-                    <article class="tarjetas">
+                    <article class="tarjeta_tecnologia">
                         <img src="./img/css.png" alt="Logo de CSS3">
                 </div>
             </section>
             <section class="proyectos" id="proyectos">
                 <h2>Proyectos</h2>
-                <div class="caja">
-                    <p class="p1">proyecto 1</p>
-                    <p class="p2">proyecto 2</p>
-                    <p class="p3">proyecto 3</p>
-                    <p class="p4">proyecto 4</p>
+                <div class="cuadricula_proyectos">
+                    <a class="tarjeta_proyecto proyecto_uno" href="https://github.com/AndrxsGutierrez/Entregables-modulo-python" target="_blank">
+                        <div class="contenido_proyecto">
+                            <span class="etiqueta_proyecto">Python</span>
+                            <h3>Calculadora Cientifica</h3>
+                            <p>
+                                Aplicacion para realizar operaciones matematicas, calculos avanzados
+                                y practicar logica con Python.
+                            </p>
+                            <span class="enlace_repositorio">Ver repositorio</span>
+                        </div>
+                    </a>
+                    <a class="tarjeta_proyecto proyecto_dos" href="https://github.com/AndrxsGutierrez/Entregables-modulo-python" target="_blank">
+                        <div class="contenido_proyecto">
+                            <span class="etiqueta_proyecto">Python</span>
+                            <h3>CRUD de Estudiantes</h3>
+                            <p>
+                                Sistema para crear, listar, actualizar y eliminar estudiantes con
+                                una estructura completa tipo CRUD.
+                            </p>
+                            <span class="enlace_repositorio">Ver repositorio</span>
+                        </div>
+                    </a>
+                    <a class="tarjeta_proyecto proyecto_tres" href="https://github.com/AndrxsGutierrez/Entregables-modulo-python" target="_blank">
+                        <div class="contenido_proyecto">
+                            <span class="etiqueta_proyecto">Python</span>
+                            <h3>Inventario Avanzado</h3>
+                            <p>
+                                Proyecto de inventario con operaciones CRUD y una gestion mas amplia
+                                de productos y movimientos.
+                            </p>
+                            <span class="enlace_repositorio">Ver repositorio</span>
+                        </div>
+                    </a>
+                    <a class="tarjeta_proyecto proyecto_cuatro" href="https://github.com/AndrxsGutierrez/Entregables-modulo-python" target="_blank">
+                        <div class="contenido_proyecto">
+                            <span class="etiqueta_proyecto">Python</span>
+                            <h3>Inventario Basico</h3>
+                            <p>
+                                Aplicacion sencilla para registrar productos y practicar la logica
+                                principal de un inventario en Python.
+                            </p>
+                            <span class="enlace_repositorio">Ver repositorio</span>
+                        </div>
+                    </a>
                 </div>
             </section>
-            <section class="Contactame" id="Contactame">
+            <section class="seccion_contactame" id="seccion_contactame">
                 <h2>Contactame</h2>
                 <form>
-                    <input class="inputs" type="text" name="nombre" placeholder="Nombre" required>
-                    <input class="inputs" type="email" name="email" placeholder="email@portafolio.com" required>
-                    <textarea rows="12" class="inputs" name="mensaje" placeholder="Mensaje" required></textarea>
-                    <button class="boton" type="submit">Enviar</button>
+                    <input class="campo_formulario" type="text" name="nombre" placeholder="Nombre" required>
+                    <input class="campo_formulario" type="email" name="email" placeholder="email@portafolio.com" required>
+                    <textarea rows="12" class="campo_formulario" name="mensaje" placeholder="Mensaje" required></textarea>
+                    <button class="boton_formulario" type="submit">Enviar</button>
                 </form>
             </section>
         </main>
     </body>
-    <footer class="footer">
+    <footer class="pie_pagina">
             <p> © 2026 Andres Gutierrez |</p>
-            <a class="link" href="https://github.com/AndrxsGutierrez" target="_blank" <!-- Icono GitHub (SVG) -->
-                <svg class="footer__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <a class="enlace_footer" href="https://github.com/AndrxsGutierrez" target="_blank" <!-- Icono GitHub (SVG) -->
+                <svg class="icono_footer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path fill="currentColor"
                     d="M12 .5C5.73.5.98 5.25.98 11.52c0 4.84 3.14 8.94 7.49 10.39.55.1.75-.24.75-.53
                     0-.26-.01-1.13-.02-2.05-3.05.66-3.7-1.47-3.7-1.47-.5-1.27-1.22-1.61-1.22-1.61

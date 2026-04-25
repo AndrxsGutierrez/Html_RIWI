@@ -16,22 +16,51 @@
     text-shadow: 0 0 50px rgb(21, 11, 11);
 }
 
-.contenedor {
+.contenedor_tecnologias {
     display: flex;
     justify-content: center;
     gap: 1rem;
     flex-wrap: wrap;
     border-radius: 10px;
+    perspective: 1000px;
 }
 
-.tarjetas {
+.tarjeta_tecnologia {
     position: relative;
     width: 250px;
     height: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
-.tarjetas img {
+
+.tarjeta_tecnologia:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.tarjeta_tecnologia img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+    transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+.tarjeta_tecnologia:hover img {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.25));
+}
+
+@keyframes aparecerTarjeta {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

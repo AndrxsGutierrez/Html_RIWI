@@ -1,6 +1,6 @@
 /*Proyectos*/
 .proyectos {
-    max-width: 50rem;
+    max-width: 70rem;
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -16,63 +16,125 @@
     text-shadow: 0 0 50px rgb(21, 11, 11);
 }
 
-.caja {
+.cuadricula_proyectos {
     display: grid;
     grid-template-columns: repeat(19, 1fr);
     grid-template-rows: repeat(20, 1fr);
-    height: 800px;
+    min-height: 800px;
+    max-width: 50rem;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1rem;
 }
 
-.p1 {
-    background-color: brown;
-    grid-column: 6 / span 9;
-    grid-row: 1 / span 6;
-    border-radius: 6px;
-    background-image: url(./../img/Calculadora\ cientifica.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.p2{
-    background-color: rgb(22, 249, 49);
-    grid-column: 6 / span 9;
-    grid-row: 15 / span 6;
-    border-radius: 6px;
-    background-image: url(./../img/gestion\ de\ estudiantes.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.p3 {
-    background-color: aqua;
-    grid-column: 1 / span 9;
-    grid-row: 8 / span 6;
-    border-radius: 6px;
-    background-image: url(./../img/inventario\ avanzado.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top;
-
-}
-
-.p4 {
-    background-color: darkorange;
-    grid-column: 11 / span 9;
-    grid-row: 8 / span 6;
-    border-radius: 6px;
-    background-image: url(./../img/inventario\ basico.png);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: top;
-}
-
-.p1, .p2, .p3, .p4 {
-    font-weight: bold;
-    font-size: 1.3rem;
-    padding: 1rem;
+.tarjeta_proyecto {
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
     display: flex;
     align-items: end;
-    justify-content: center;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    animation: entradaProyecto 0.5s ease both;
+}
+
+
+.tarjeta_proyecto:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.28);
+}
+
+
+.contenido_proyecto {
+    position: relative;
+    z-index: 1;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    width: 100%;
+}
+
+.etiqueta_proyecto {
+    width: fit-content;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.contenido_proyecto h3 {
+    font-size: 1.4rem;
+}
+
+.contenido_proyecto p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-width: 30ch;
+}
+
+.enlace_repositorio {
+    width: fit-content;
+    padding: 0.45rem 0.8rem;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.16);
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.tarjeta_proyecto:hover .enlace_repositorio {
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.proyecto_uno {
+    grid-column: 6 / span 9;
+    grid-row: 1 / span 6;
+    background-image: url(./../img/Calculadora\ cientifica.png);
+}
+
+.proyecto_dos {
+    grid-column: 6 / span 9;
+    grid-row: 15 / span 6;
+    background-image: url(./../img/gestion\ de\ estudiantes.png);
+}
+
+.proyecto_tres {
+    grid-column: 1 / span 9;
+    grid-row: 8 / span 6;
+    background-image: url(./../img/inventario\ avanzado.png);
+}
+
+.proyecto_cuatro {
+    grid-column: 11 / span 9;
+    grid-row: 8 / span 6;
+    background-image: url(./../img/inventario\ basico.png);
+}
+
+
+@media screen and (max-width: 800px) {
+    .proyectos {
+        margin: 8rem auto;
+    }
+
+    .cuadricula_proyectos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        min-height: auto;
+    }
+
+    .tarjeta_proyecto {
+        min-height: 280px;
+        grid-column: auto;
+        grid-row: auto;
+    }
+
+    .contenido_proyecto h3 {
+        font-size: 1.45rem;
+    }
 }

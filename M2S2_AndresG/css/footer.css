@@ -1,4 +1,4 @@
-.footer {
+.pie_pagina {
     display: flex;
     justify-content: center;
     align-items: center; /* centra verticalmente */
@@ -11,11 +11,11 @@
     gap: 1rem; /* espacio entre texto e icono */
 }
 
-.footer__icon {
+.icono_footer {
     width: 16px;
     height: 16px;
 }
 
-.link {
+.enlace_footer {
     text-decoration: none;
 }
